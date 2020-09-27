@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { Tab7PageRoutingModule } from './tab7-routing.module';
 
 import { Tab7Page } from './tab7.page';
+import { BleDevicesComponent } from '../ble-devices/ble-devices.component';
 
 @NgModule({
   imports: [
@@ -15,6 +16,6 @@ import { Tab7Page } from './tab7.page';
     IonicModule,
     Tab7PageRoutingModule
   ],
-  declarations: [Tab7Page]
+  declarations: [Tab7Page, BleDevicesComponent]
 })
 export class Tab7PageModule {}

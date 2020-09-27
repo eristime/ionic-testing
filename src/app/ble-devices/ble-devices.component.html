@@ -1,0 +1,17 @@
+<p>
+  ble-devices works!
+</p>
+
+<ion-button color="primary" (click)="startScan()" >Start scan</ion-button>
+<ion-button color="primary" (click)="stopScan()" >Stop scan</ion-button>
+
+<div *ngIf="devices">
+  <div *ngFor="let device of devices">
+    <ion-item>
+      <ion-label>
+        Device: <br>name:{{device.name}}<br>address:{{device.address}}<br>rssi: {{device.rssi}}<br>
+      </ion-label>
+    </ion-item>
+  </div>
+
+</div>

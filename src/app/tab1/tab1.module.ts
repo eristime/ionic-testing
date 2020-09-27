@@ -7,6 +7,8 @@ import { ExploreContainerComponentModule } from '../explore-container/explore-co
 
 import { Tab1PageRoutingModule } from './tab1-routing.module';
 
+import { BleDevicesComponent } from '../ble-devices/ble-devices.component'
+
 @NgModule({
   imports: [
     IonicModule,
@@ -15,6 +17,6 @@ import { Tab1PageRoutingModule } from './tab1-routing.module';
     ExploreContainerComponentModule,
     Tab1PageRoutingModule
   ],
-  declarations: [Tab1Page]
+  declarations: [Tab1Page, BleDevicesComponent]
 })
 export class Tab1PageModule {}
